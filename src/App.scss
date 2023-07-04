@@ -1,0 +1,67 @@
+@import './utils/sass/colors.scss';
+@import './utils/sass/layout.scss';
+
+.col-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-picture {
+  height: 250px;
+  background-color: $blue;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $blue;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(at top right, transparent 1%, $dark-blue 70%);
+  }
+}
+
+.form-content {
+  padding: 40px;
+}
+
+.up-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $light-gray;
+  margin: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+.author {
+  color: $light-gray;
+  font-size: 21px;
+  margin: 30px 0 60px;
+}
+
+@media only screen and (min-width: 900px) {
+  .col-form,
+  .col-picture {
+    height: 100vh;
+  }
+
+  .col-form {
+    width: 40%;
+  }
+  
+  .col-picture {
+    width: 60%;
+  }
+}

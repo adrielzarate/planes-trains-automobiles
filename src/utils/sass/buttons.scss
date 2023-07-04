@@ -1,0 +1,10 @@
+@import './colors.scss';
+
+.btn-primary {
+    border-radius: 30px;
+    color: #fff;
+    padding: 20px 40px;
+    border: none;
+    background-color: $light-blue;
+    font-weight: 600;
+}

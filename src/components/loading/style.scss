@@ -1,0 +1,29 @@
+@import '../../utils/sass/overlay.scss';
+
+.loading {
+    @extend .overlay;
+    
+    .message {
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+
+    .spin {
+    
+        &::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 50px;
+            border: #fff solid 5px;
+            border-top-color: rgba($color: #fff, $alpha: .3);
+            border-radius: 50%;
+            animation: spin 1.3s linear infinite;
+        }
+    
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import './utils/sass/colors.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    margin: 0;
+    background-color: $dark-blue;
+    color: #fff;
+}
